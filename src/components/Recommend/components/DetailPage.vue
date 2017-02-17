@@ -313,6 +313,7 @@ export default{
     }
   },
   mounted:function(){
+    window.onscroll = null;
     this.$http.get('../../../../static/data/recommend/detail.json').then((response)=>{
       this.totalItems = response.body;
       var number = this.$store.state.paint.num;

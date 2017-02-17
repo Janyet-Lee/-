@@ -48,6 +48,9 @@
 <script>
 export default {
 	name:'SendAuction',
+  mounted:function(){
+    window.onscroll = null;
+  }
 }
 </script>
 
